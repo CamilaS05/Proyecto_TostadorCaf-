@@ -1,0 +1,8 @@
+PROJECT_NAME           = "Tostador Cafe ESP32"
+OUTPUT_DIRECTORY       = docs/doxygen
+INPUT                  = main components
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+QUIET                  = YES
