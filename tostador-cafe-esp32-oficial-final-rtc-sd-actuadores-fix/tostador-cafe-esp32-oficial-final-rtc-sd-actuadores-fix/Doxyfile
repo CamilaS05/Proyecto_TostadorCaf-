@@ -1,0 +1,37 @@
+# Doxyfile - Tostadora automática de café ESP32
+
+PROJECT_NAME           = "Tostadora automática de café con ESP32"
+PROJECT_BRIEF          = "Documentación Doxygen del firmware ESP32 + FreeRTOS"
+OUTPUT_DIRECTORY       = docs_doxygen
+
+INPUT                  = main/main_tostadora_doxygen_final.c docs/doxygen/index.md
+FILE_PATTERNS          = *.c *.h *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = docs/doxygen/index.md
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_PRIVATE        = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Si no tienes Graphviz instalado, cambia HAVE_DOT a NO.
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = png
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
